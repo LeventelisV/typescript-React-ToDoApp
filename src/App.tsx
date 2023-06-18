@@ -1,6 +1,7 @@
 import React, { useState,} from 'react';
 import './App.css';
 import UserInput from "./Components/UserInput"
+import ToDoList from './Components/ToDoList';
 
 
 export type Item = {
@@ -15,6 +16,7 @@ function App(): React.JSX.Element {
   return (
     <div className="bg-gray-200 min-h-screen">
       <UserInput items={items} setItems={setItems}/>
+      <ToDoList items={items} setItems={setItems}/>
     </div>
   );
 }
